@@ -1,22 +1,31 @@
-.App {
-    height: 100vh;
+.App{
+    .sectionWrapper {
+        height: 100vh;
 
-    .sections {
-        width: 100%;
-        height: calc(100vh - 70px);
-        background-color: aquamarine;
-        position: relative;
-        top: 70px;
-        scroll-behavior: smooth;
-        scroll-snap-type: y mandatory;
-        scrollbar-width: none;
-        &::-webkit-scrollbar{
-            display: none;
-        }
-        > *{
-            width: 100vw;
+        .sections {
+            width: 100%;
             height: calc(100vh - 70px);
-            scroll-snap-align: start;
+            background-color: aquamarine;
+            position: relative;
+            top: 70px;
+            scroll-behavior: smooth;
+            scroll-snap-type: y mandatory;
+            scrollbar-width: none;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            > *{
+                width: 100vw;
+                height: calc(100vh - 70px);
+                scroll-snap-align: start;
+            }
         }
+    }
+
+    .cbWrapper {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 4;
     }
 }
