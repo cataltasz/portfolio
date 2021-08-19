@@ -5,7 +5,7 @@ import axios from 'axios'
 import {parseString} from 'xml2js'
 
 export default function ChatBot() {
-    const [messages, setMessages] = useState([{by_me: true, message: "Hi, how can I help you?"}, {by_me: false, message: "Hi, how can I help you?"},]);
+    const [messages, setMessages] = useState([{by_me: false, message: "Hi, how can I help you?"}]);
     const messagesEndRef = useRef(null)
     const scrollToBottom = () => {
         messagesEndRef.current.scrollIntoView({ behavior: "smooth" })
