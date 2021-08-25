@@ -13,14 +13,14 @@ export default function Portfolio() {
     return (
         <div className="portfolio" id="portfolio">
             <Fade>
-            <h1>Portfolio</h1>
-            <ul>
-                {Object.entries(data).map(item => (<PortfolioList item={item[1]} active={item[1].id === selected} setSelected={setSelected} />))}            
-            </ul>
+                <h1>Portfolio</h1>
+                <ul>
+                    {Object.entries(data).map(item => (<PortfolioList item={item[1]} active={item[1].id === selected} setSelected={setSelected} />))}            
+                </ul>
 
-            <div className="container">
-                {data[selected].projects.map(prj => <ProjectItem item={items[prj]}/>)}
-            </div>
+                <div className="container">
+                    {data[selected].projects.map(prj => <ProjectItem item={items[prj]}/>)}
+                </div>
             </Fade>
         </div>
     )

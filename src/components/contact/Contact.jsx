@@ -30,8 +30,6 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setMessage(false);
-    
-    
     emailjs.sendForm('service_au5xxfz', 'template_vu5nrgb', e.target, 'user_9vTZ1TVJD9R1iYBBAe0RR')
       .then((result) => {
           setMessage(true);
