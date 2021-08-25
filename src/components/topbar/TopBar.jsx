@@ -9,7 +9,7 @@ export default function TopBar({ menuOpen, setMenuOpen }) {
                     <a href="#intro" className="logo">Mustafa Çataltaş</a>
                     <div className="itemContainer">
                         <Person className="icon"/>
-                        <span>+905423831876</span>
+                        <span><a id="email" href="tel:+905423831876">+905423831876</a></span>
                     </div>
 
                     <div className="itemContainer">

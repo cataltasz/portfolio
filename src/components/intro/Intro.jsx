@@ -1,6 +1,7 @@
 import './intro.scss'
 import { init } from 'ityped'
 import { useEffect, useRef } from 'react'
+import Fade from 'react-reveal/Fade';
 
 export default function Intro() {
     const textRef = useRef();
@@ -9,6 +10,7 @@ export default function Intro() {
     }, [])
     return (
         <div className="intro" id="intro">
+            <Fade>
             <div className="left">
                 <div className="imgContainer">
                     <img src="assets/man.png" alt="" />
@@ -24,6 +26,7 @@ export default function Intro() {
                     <img src="assets/down.png" alt="down" />
                 </a>
             </div>
+            </Fade>
         </div>
     )
 }
